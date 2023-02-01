@@ -1,5 +1,7 @@
 const board = boardGen();
 
+console.log(board);
+
 function shortestPath( startPos , endPos, currentPath = [] ) {
     
     let startPosIndex = [ startPos[0] - 1 , startPos[1] - 1 ];
@@ -76,8 +78,6 @@ function boardGen() {
         boards.push([]);
         for ( let j = 0 ; j < 8 ; j++ ) {
             boards[i].push([i, j]);
-            console.log(i,j);
-
         }
     }
 
